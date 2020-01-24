@@ -125,6 +125,10 @@ and, the distance of the lane from the center/car is calculated as
 
     dist_center = A*y_eval**2+B*y_eval+C-camera_pos
 
+and also deviation is calculated as 
+
+        deviation = (((left_fitx[-1] + right_fitx[-1])/2)-camera_pos_in_pixels) * xm_p
+
 ![alt text][ROC]
 
 #### **6. Visualizing lanes and calculated curvature:**
@@ -137,7 +141,7 @@ THe said steps are implemented as a pipeline and he desired results are achieved
 
 
 
-Here's a [link to my video result](https://www.youtube.com/watch?v=cU1ItS24-_c&feature=youtu.be)
+Here's a [link to my video result](./output_images/project_video_out.mp4) and [output video analysis](./output_images/project_video_out_analysis.mp4)
 
 ---
 
